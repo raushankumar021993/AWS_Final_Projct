@@ -1,0 +1,44 @@
+<style>
+.leftbox {
+width: 284px;
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    padding: 26px 24px 24px;
+    -webkit-box-shadow: 2px 3px 7px rgba(0,0,0,0.66);
+    -moz-box-shadow: 2px 3px 7px rgba(0,0,0,0.66);
+    -ms-box-shadow: 2px 3px 7px rgba(0,0,0,0.66);
+    -o-box-shadow: 2px 3px 7px rgba(0,0,0,0.66);
+    box-shadow: 2px 3px 7px rgba(0,0,0,0.66);
+    float: left;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    z-index: 99;}
+
+</style>
+<body background="https://images.cardekho.com/images/uploadimages/1509507889716/ccp.jpg">
+<div class ="row">
+    <div class = "col-md-4 col-md-offset-4">
+        <h1>Sign up</h1>
+        <form action = "/user/signup" method = "post">
+        <div class="leftbox">
+            <div class="forr="email">E-Mail</label>
+                         <input type="text" id="email" name="email" class="form-control">
+              </div>
+            <div class="form-group">
+             <label for="password">Password</label>
+
+             <input type="password" tm-group type="text" id="email" name="email" class="form-control">
+
+            </div>
+           <input type="hidden" name ="_csrf" value="{{ csrfToken }}">
+            <button type="submit" class= "btn btn-primary"> Sign Up </button>
+            </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
