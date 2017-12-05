@@ -65,7 +65,7 @@ router.get('/', function(req, res, next) {
     redisclient.get("Cars",function(err,result){
         var c1 = [];
         var c2 = [];
-        var chunkSize =4;
+        var chunkSize =3;
         console.log("result :"+result);
         var obj1 = JSON.parse(result.replace("null", '"'));
 
